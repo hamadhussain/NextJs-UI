@@ -79,7 +79,7 @@ button,img{
 }
 .background, .background::before {
   background-image: url('/background.jpeg');
-  background-position: top right;
+  background-position: 50% 80%; 
   background-size: contain;
   background-repeat: no-repeat;
 }
