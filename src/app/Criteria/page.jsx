@@ -234,14 +234,15 @@ function CriteriaRow({ index, removeItem }) {
     <div className="flex items-center border-b border-gray-700 py-2 gap-8">
       <div className="flex items-center gap-2 text-3xl ">
         <span className="text-sm">{index}</span>
-        <p className="font-medium">{"["}</p>
-      </div>
+ <p className="font-medium ">
+        {index === 3 ? "" : "["}
+          </p>      </div>
   <div className="flex items-center gap-4">
   {index === 1 && <HiArrowSmallDown className="" />}
   {index === 2 && <RiArrowUpDownLine className="" />}
   {index === 3 && <HiArrowUp className="" />}
 
-  <span className="w-5">{index === 3 ? "" : "AND"}</span>
+  <span className="w-5">{index === 1 ? "" : "AND"}</span>
 </div>
       <div className="relative inline-block gap-2 px-7">
         <FaCaretDown className="top-1 absolute pointer-events-none" />
