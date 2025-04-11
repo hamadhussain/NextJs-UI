@@ -205,7 +205,7 @@ export default function Home() {
           <GoSearch />
         </div>
         <div className="pl-4">
-          <button className="border border-gray-600 px-3 py-1 text-sm">
+          <button className="button px-3 py-1 text-sm">
             ADD
           </button>
         </div>
@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* Run Button */}
       <div className="flex justify-end py-2">
-        <button className="border border-gray-600 px-3 py-1 text-sm">
+        <button className="button px-3 py-1 text-sm">
           RUN SCREEN
         </button>
       </div>
