@@ -127,30 +127,10 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
+import { FaArrowDown, FaCaretDown, FaTimes } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { RiArrowUpDownLine } from "react-icons/ri";
-import { HiArrowSmallDown, HiArrowUp } from "react-icons/hi2";
 
 export default function Home() {
   const [newCriteria, setNewCriteria] = useState("");
@@ -160,30 +140,16 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-black p-6 space-y-4 w-2/3 text-white">
-      <h2 className="text-lg tracking-widest mb-4">CRITERIA</h2>
+    <div className="bg-black p-8 space-y-4 w-3/4 text-white">
+      <h2 className="tracking-widest mb-4">CRITERIA</h2>
 
       {/* Row 1 */}
-      <div className="flex items-center border-b border-gray-700 py-2">
-        <div className="w-8 flex justify-center items-center">
-          <span>1</span>
-          <p className="relative text-3xl font-medium left-2">{"["}</p>
-        </div>
-        <div className="w-12 flex items-center gap-6 relative left-2">
-          <HiArrowSmallDown />
-          <span>And</span>
-        </div>
-        <div className="flex-1 px-7">
-          <span>Industry Classification In (Primary) Real Estate; Health Care</span>
-        </div>
-        <div className="w-1/4 flex justify-end items-center">
-          <span className="text-gray-400">250,000</span>
-          <FaTimes className="cursor-pointer" onClick={() => removeItem(1)} />
-        </div>
-      </div>
+      {Array.from({ length: 3 }, (x, i) => (
+        <CriteriaRow key={i} index={i + 1} />
+      ))}
 
       {/* Row 2 */}
-      <div className="flex items-center border-b border-gray-700 py-2">
+      {/* <div className="flex items-center border-b border-gray-700 py-2">
         <div className="w-8 flex justify-center items-center">
           <span>2</span>
           <p className="relative -top-4 text-3xl font-medium left-2">{"["}</p>
@@ -202,10 +168,10 @@ export default function Home() {
           <span className="text-gray-400">214,712</span>
           <FaTimes className="cursor-pointer" onClick={() => removeItem(2)} />
         </div>
-      </div>
+      </div> */}
 
       {/* Row 3 */}
-      <div className="flex items-center border-b border-gray-700 py-2">
+      {/* <div className="flex items-center border-b border-gray-700 py-2">
         <div className="w-8 flex justify-center items-center">
           <span>3</span>
         </div>
@@ -223,7 +189,7 @@ export default function Home() {
           <span className="text-gray-400">3,609</span>
           <FaTimes className="cursor-pointer" onClick={() => removeItem(3)} />
         </div>
-      </div>
+      </div> */}
 
       {/* Add Criteria */}
       <div className="flex items-center py-2">
@@ -239,13 +205,54 @@ export default function Home() {
           <GoSearch />
         </div>
         <div className="pl-4">
-          <button className="border border-gray-600 px-3 py-1 text-sm">ADD</button>
+          <button className="border border-gray-600 px-3 py-1 text-sm">
+            ADD
+          </button>
         </div>
       </div>
 
       {/* Run Button */}
       <div className="flex justify-end py-2">
-        <button className="border border-gray-600 px-3 py-1 text-sm">RUN SCREEN</button>
+        <button className="border border-gray-600 px-3 py-1 text-sm">
+          RUN SCREEN
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function CriteriaRow({ index, removeItem }) {
+  const criterions = [
+    "Industry Classification In (Primary) Real Estate; Health Care",
+    "Geography In United States and Canada",
+    "Company Type In Public Company",
+  ];
+
+  return (
+    <div className="flex items-center border-b border-gray-700 py-2 gap-8">
+      <div className="flex items-center gap-2 text-3xl ">
+        <span className="text-sm">{index}</span>
+        <p className="font-medium">{"["}</p>
+      </div>
+      <div className="flex items-center gap-4">
+        <FaArrowDown className="text-gray-400" />
+        <span className="w-5">{index === 1 ? "" : "AND"}</span>
+      </div>
+      <div className="relative inline-block gap-2 px-7">
+        <FaCaretDown className="top-1 absolute pointer-events-none" />
+        <select defaultValue={criterions[index -1]} className="appearance-none pl-8 bg-none">
+          {criterions.map((criterion, i) => (
+            <option className="text-black" key={i} value={criterion}>
+              {criterion}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="grow flex gap-2 justify-end items-center">
+        <span className="text-gray-400">250,000</span>
+        <button onClick={() => removeItem(1)}>
+          <FaTimes />
+        </button>
       </div>
     </div>
   );
