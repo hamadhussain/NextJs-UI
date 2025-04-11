@@ -215,7 +215,7 @@ export default function Home() {
 
       {/* Run Button */}
       <div className="flex justify-end py-2">
-        <button className="button px-3 py-1 text-sm">
+          <button className="button px-3 py-1 text-sm w-full sm:w-auto">
           RUN SCREEN
         </button>
       </div>
