@@ -11,8 +11,8 @@ body{
 button,img{
   cursor: pointer;
 }
-.criteria{
-  box-shadow: 5px 50px 80px -12px black;
+.criteria {
+    box-shadow: 110px 117px 175px 65px #000000;
 }
 
 .addButton{
