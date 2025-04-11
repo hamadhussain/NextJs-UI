@@ -79,11 +79,11 @@ button,img{
 }
 .background, .background::before {
   background-image: url('/background.jpeg');
-  background-position: 50% 80%; 
+  background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-bottom: 120px;
 }
-
 .background {
   position: absolute;
   top: 0%;
