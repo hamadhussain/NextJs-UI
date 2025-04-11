@@ -245,7 +245,7 @@ function CriteriaRow({ index, removeItem }) {
   <span className="w-5">{index === 1 ? "" : "AND"}</span>
 </div>
       <div className="relative inline-block gap-2 px-7">
-        <FaCaretDown className="top-1 absolute pointer-events-none" />
+      {index === 3 ?<FaCaretDown className="top-1 absolute pointer-events-none hidden" />  : <FaCaretDown className="top-1 absolute pointer-events-none " /> }
         <select defaultValue={criterions[index -1]} className="appearance-none pl-8 bg-none">
           {criterions.map((criterion, i) => (
             <option className="text-black" key={i} value={criterion}>
@@ -256,7 +256,7 @@ function CriteriaRow({ index, removeItem }) {
       </div>
       <div className="grow flex gap-2 justify-end items-center mx-4">
   <span> 
-  {index === 1 && "250,000"}
+  {index === 1 && <p className=""><span className=" text-sm px-1 opacity-65">{">  "}</span> 250,000</p>}
   {index === 2 && "214,712"}
   {index === 3 && "3,609"}</span>        <button onClick={() => removeItem(1)}>
           <FaTimes />
