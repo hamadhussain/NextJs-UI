@@ -11,6 +11,9 @@ body{
 button,img{
   cursor: pointer;
 }
+.criteria{
+  box-shadow: 5px 43px 80px -12px black;
+}
 
 .borderColor{
   border: 1px solid rgba(217, 217, 217, 1);
