@@ -237,7 +237,7 @@ function CriteriaRow({ index, removeItem }) {
  <p className="font-medium ">
         {index === 3 ? "" : "["}
           </p>      </div>
-  <div className="flex items-center gap-4">
+      <div className={`flex items-center gap-4 ${index === 3 ? "ml-2.5" : ""}`}>
   {index === 1 && <HiArrowSmallDown className="" />}
   {index === 2 && <RiArrowUpDownLine className="" />}
   {index === 3 && <HiArrowUp className="" />}
