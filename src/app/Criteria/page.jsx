@@ -253,7 +253,7 @@ function CriteriaRow({ index, removeItem }) {
           ))}
         </select>
       </div>
-      <div className="grow flex gap-2 justify-end items-center">
+      <div className="grow flex gap-2 justify-end items-center mx-4">
   <span> 
   {index === 1 && "250,000"}
   {index === 2 && "214,712"}
