@@ -5,9 +5,12 @@ body{
   font-family: Georgia, serif;
   color: rgba(210, 210, 210, 1);
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
+button,img{
+  cursor: pointer;
+}
 
 .borderColor{
   border: 1px solid rgba(217, 217, 217, 1);

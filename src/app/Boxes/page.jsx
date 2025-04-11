@@ -11,6 +11,8 @@ const BoxGrid = () => {
     { img: '/Boxes/logo4.png', text: 'Business Cycles and Backing Status' },
     { img: '/Boxes/logo5.png', text: 'Deals and Investors' },
     { img: '/Boxes/logo6.png', text: 'Financial Metrics' },
+    { img: '/Boxes/logo7.png', text: 'Intellectual Property' },
+
   ];
 
   return (
@@ -18,7 +20,7 @@ const BoxGrid = () => {
   <>
     <p className=' borderColorUp text-2xl'>Explore Company Criteria below</p>
 
-<div className="box-grid-container">
+<div className="box-grid-container my-10">
   {boxes.map((box, index) => (
     <div key={index} className="box-grid-box">
       <p className="box-grid-text text-center px-2">{box.text}</p>
