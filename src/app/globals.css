@@ -32,7 +32,9 @@ button,img{
 
 .button{
   background-color:rgba(61, 61, 61, 1) ;
-  @apply rounded-md;}
+  @apply rounded-md;
+  padding: 10px;
+}
 
 .box-grid-container {
   position: absolute;
