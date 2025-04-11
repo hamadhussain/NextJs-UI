@@ -12,10 +12,10 @@ const Navbar = () => {
         className="h-full w-min object-scale-down"
       />
       <div className="flex justify-center items-center gap-12 text-white font-bold">
-        <p className=" px-2 py-2 border-4 bg-white text-black rounded-lg">Companies</p>
-        <p className=" px-4">Deals</p>
-        <p className=" px-4">Limited Partners</p>
-        <p className=" px-4">Support</p>
+        <p className=" cursor-pointer px-2 py-2 border-4 bg-white text-black rounded-lg">Companies</p>
+        <p className=" cursor-pointer px-4">Deals</p>
+        <p className=" cursor-pointer px-4">Limited Partners</p>
+        <p className=" cursor-pointer px-4">Support</p>
       </div>
        <Image
         src="/secondlogo.png"
