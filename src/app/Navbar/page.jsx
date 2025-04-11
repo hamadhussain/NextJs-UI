@@ -22,7 +22,7 @@ const Navbar = () => {
         alt={`Image`}
         width={150}
         height={100}
-                 className="px-4"
+                 className="mx-4"
 
       />
     </div>
