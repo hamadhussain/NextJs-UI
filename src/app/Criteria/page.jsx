@@ -207,7 +207,7 @@ export default function Home() {
           <GoSearch />
         </div>
         <div className="pl-4">
-          <button className="button px-3 py-1 text-sm">
+          <button className="addButton px-3 py-1 text-sm">
             ADD
           </button>
         </div>
