@@ -9,7 +9,7 @@ const Companies = () => {
         <button className="h-10 px-42 text-sm border-4 bg-white relative -left-8 text-black rounded-lg">
           Chat ExM
         </button>
-        <div className="flex justify-center items-center gap-4 mr-24">
+        <div className="flex justify-center items-center gap-4 mr-24 relative left-6">
           Sequoia
           <Image
             src="/leaf.jpeg"
