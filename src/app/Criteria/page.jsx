@@ -131,6 +131,8 @@
 import { useState } from "react";
 import { FaArrowDown, FaCaretDown, FaTimes } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
+import { RiArrowUpDownLine } from "react-icons/ri";
+import { HiArrowSmallDown, HiArrowUp } from "react-icons/hi2";
 
 export default function Home() {
   const [newCriteria, setNewCriteria] = useState("");
@@ -234,10 +236,13 @@ function CriteriaRow({ index, removeItem }) {
         <span className="text-sm">{index}</span>
         <p className="font-medium">{"["}</p>
       </div>
-      <div className="flex items-center gap-4">
-        <FaArrowDown className="text-gray-400" />
-        <span className="w-5">{index === 1 ? "" : "AND"}</span>
-      </div>
+  <div className="flex items-center gap-4">
+  {index === 1 && <HiArrowSmallDown className="" />}
+  {index === 2 && <RiArrowUpDownLine className="" />}
+  {index === 3 && <HiArrowUp className="" />}
+
+  <span className="w-5">{index === 3 ? "" : "AND"}</span>
+</div>
       <div className="relative inline-block gap-2 px-7">
         <FaCaretDown className="top-1 absolute pointer-events-none" />
         <select defaultValue={criterions[index -1]} className="appearance-none pl-8 bg-none">
@@ -249,8 +254,10 @@ function CriteriaRow({ index, removeItem }) {
         </select>
       </div>
       <div className="grow flex gap-2 justify-end items-center">
-        <span className="text-gray-400">250,000</span>
-        <button onClick={() => removeItem(1)}>
+  <span> 
+  {index === 1 && "250,000"}
+  {index === 2 && "214,712"}
+  {index === 3 && "3,609"}</span>        <button onClick={() => removeItem(1)}>
           <FaTimes />
         </button>
       </div>
