@@ -9,7 +9,7 @@ const Navbar = () => {
         alt={`Image`}
         width={1920}
         height={1080}
-        className="h-full w-min object-scale-down"
+        className="h-28 w-min "
       />
       <div className="flex justify-center items-center gap-12 text-white font-bold">
         <p className=" cursor-pointer px-2 py-2 border-4 bg-white text-black rounded-lg">Companies</p>
@@ -22,6 +22,8 @@ const Navbar = () => {
         alt={`Image`}
         width={150}
         height={100}
+                 className="px-4"
+
       />
     </div>
   );
