@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="h-24 flex justify-between items-center borderColor">
       <Image
-        src="/firstlogo.png"
+        src="/firstLOGO.png"
         alt={`Image`}
         width={1920}
         height={1080}
