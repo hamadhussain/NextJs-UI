@@ -18,7 +18,7 @@ const Navbar = () => {
         <p className=" cursor-pointer px-4">Support</p>
       </div>
        <Image
-        src="/secondlogo.png"
+        src="/secondLOGO.png"
         alt={`Image`}
         width={150}
         height={100}
