@@ -5,7 +5,7 @@ const Companies = () => {
   return (
     <div className="flex justify-between py-3 px-8 items-center borderColor">
       <p className="text-lg ">Company Screening</p>
-      <div className="flex  justify-center items-center gap-2 relative -left-3">
+      <div className="flex  justify-center items-center gap-2 relative left-1">
         <button className="h-10 px-61.5 text-sm border-4 bg-white relative -left-8 text-black rounded-lg">
           Chat ExM
         </button>
