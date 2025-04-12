@@ -11,7 +11,7 @@ const Navbar = () => {
         height={1080}
         className="h-28 w-min "
       />
-      <div className="flex justify-center items-center gap-12 text-white font-bold">
+      <div className="flex justify-center items-center gap-20 text-white font-bold">
         <p className=" cursor-pointer px-2 py-2 border-4 bg-white text-black rounded-lg">Companies</p>
         <p className=" cursor-pointer px-4">Deals</p>
         <p className=" cursor-pointer px-4">Limited Partners</p>
