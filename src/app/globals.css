@@ -62,7 +62,8 @@ button,img{
   justify-content: space-around;
   align-items: center;
 /*   background: rgba(210, 210, 210, 1); */
-  @apply bg-black;
+  background: #151515CC;
+  
 }
 
 .box-grid-image {
@@ -75,7 +76,8 @@ button,img{
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  color: rgba(0, 0, 0, 1);
+/*   color: rgba(0, 0, 0, 1); */
+  color:#CFCFCF0D;
   margin-top: 8px;
 }
 .background, .background::before {
