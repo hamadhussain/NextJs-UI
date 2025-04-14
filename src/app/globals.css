@@ -61,7 +61,8 @@ button,img{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: rgba(210, 210, 210, 1);
+/*   background: rgba(210, 210, 210, 1); */
+  @apply bg-black;
 }
 
 .box-grid-image {
