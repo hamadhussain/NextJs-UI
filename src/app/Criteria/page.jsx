@@ -142,7 +142,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-black p-8 pt-12 px-36 space-y-4 w-3/4 text-white criteria">
+    <div className="bg-black p-8 pt-12 pr-44 text-sm space-y-4 w-3/4 text-white criteria">
       <h2 className="tracking-widest mb-4">CRITERIA</h2>
 
       {/* Row 1 */}
