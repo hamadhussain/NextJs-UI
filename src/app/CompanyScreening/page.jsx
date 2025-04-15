@@ -6,7 +6,7 @@ const Companies = () => {
     <div className="flex justify-between py-3 px-8 items-center borderColor">
       <p className="text-lg ">Company Screening</p>
       <div className="flex  justify-center items-center gap-4 relative left-2.5">
-        <button className="py-1 px-62 text-sm border-4 bg-white relative -left-8 text-black rounded-lg">
+        <button className="py-0 px-62 text-sm border-4 bg-white relative -left-8 text-black rounded-lg">
           Chat ExM
         </button>
         <div className="flex justify-center items-center gap-4 mr-24 relative ">
