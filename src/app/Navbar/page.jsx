@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="h-24 flex justify-between items-center borderColor">
+    <div className="h-24 px-6 flex justify-between items-center borderColor">
       <Image
         src="/logo.png"
         alt={`Image`}
@@ -22,7 +22,7 @@ const Navbar = () => {
         alt={`Image`}
         width={150}
         height={100}
-                 className="mx-4"
+                 className=""
 
       />
     </div>
