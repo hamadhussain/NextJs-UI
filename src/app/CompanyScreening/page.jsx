@@ -3,13 +3,13 @@ import React from "react";
 
 const Companies = () => {
   return (
-    <div className="flex justify-between py-3 px-8 items-center borderColor">
+    <div className="flex justify-between py-3 px-8 items-center borderColor companyScreening">
       <p className="text-lg ">Company Screening</p>
-      <div className="flex  justify-center items-center gap-4 relative left-2.5">
-        <button className="py-0 px-62 text-sm border-4 bg-white relative -left-8 text-black rounded-lg">
+      <div className="flex  justify-centr  items-center gap-16 ">
+        <button className="chatEXM   bg-white relative  text-black rounded-lg">
           Chat ExM
         </button>
-        <div className="flex justify-center items-center gap-4 mr-24 relative ">
+        <div className="flex justify-center items-center gap-3  relative ">
           Sequoia
           <Image
             src="/leaf.jpeg"
@@ -20,9 +20,10 @@ const Companies = () => {
           />
         </div>
       </div>
-      <div></div>
+      <div className="px-17"></div>
     </div>
   );
 };
 
 export default Companies;
+
