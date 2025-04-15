@@ -80,7 +80,7 @@ button,img{
   margin-top: 8px;
 }
 .background, .background::before {
-  background-image: url('/background.jpeg');
+  background-image: url('/background.png');
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
