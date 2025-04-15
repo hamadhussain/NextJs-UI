@@ -16,7 +16,7 @@ const BoxGrid = () => {
 
   return (
     <div className="borderColorUp ">
-      <p className="mx-8 py-10 text-lg">Explore Company Criteria below</p>
+      <p className="mx-8 py-8 text-lg">Explore Company Criteria below</p>
 
       <div className="flex gap-4 items-center flex-wrap  justify-center  p-8">
         {boxes.map((box, index) => (
