@@ -7,7 +7,7 @@ const Navbar = () => {
       <Image
         src="/logo.png"
         alt={`Image`}
-        width={1620}
+        width={1020}
         height={980}
         className="h-28 w-min "
       />
