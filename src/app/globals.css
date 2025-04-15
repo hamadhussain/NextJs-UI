@@ -7,6 +7,10 @@ body{
 
   overflow: hidden;
 }
+.navFont {
+  font-weight: 700;
+  font-size: 22px;
+}
 
 button,img{
   cursor: pointer;
