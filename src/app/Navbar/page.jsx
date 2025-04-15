@@ -3,13 +3,13 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="h-24 px-6 py-12 flex justify-between items-center borderColor">
+    <div className="h-24 px-6 py-14 flex justify-between items-center borderColor">
       <Image
         src="/logo.png"
         alt={`Image`}
         width={500}
         height={500}
-        className="h-21 w-min "
+        className="logoIMG "
       />
       <div className="flex justify-center items-center gap-20 text-white font-bold pl-8 navFont">
         <p className=" cursor-pointer px-4 py-1 border-4 bg-white text-black rounded-lg">Companies</p>
@@ -22,7 +22,7 @@ const Navbar = () => {
         alt={`Image`}
         width={150}
         height={100}
-                 className=""
+                 className="logoIMG"
 
       />
     </div>
@@ -30,3 +30,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
