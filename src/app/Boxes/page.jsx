@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { IoEarth } from "react-icons/io5";
 import Image from "next/image";
 
 const BoxGrid = () => {
@@ -16,15 +15,12 @@ const BoxGrid = () => {
 
   return (
     <div className="borderColorUp ">
-      <p className="mx-8 pb-8 pt-6 text-2xl">Explore Company Criteria below</p>
+      <p className="mx-8   boxHeader">Explore Company Criteria below</p>
 
-      <div className="flex  items-center flex-wrap  justify-evenly  p-8">
+      <div className="flex  items-center flex-wrap  justify-evenly pt-14 px-10">
         {boxes.map((box, index) => (
           <div key={index} className="box-grid-box">
             <p className="box-grid-text text-center px-2">{box.text}</p>
-{/*             {index === 2 ? (
-              <IoEarth size={90} color="rgba(0, 0, 0, 1)" />
-            ) : ( */}
               <Image
                 src={box.img}
                 alt={`Box ${index + 1}`}
@@ -32,7 +28,6 @@ const BoxGrid = () => {
                 width={100}
                 height={100}
               />
-{/*             // )} */}
           </div>
         ))}
       </div>
@@ -41,3 +36,4 @@ const BoxGrid = () => {
 };
 
 export default BoxGrid;
+
