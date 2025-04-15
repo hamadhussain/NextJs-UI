@@ -74,7 +74,8 @@ button,img{
 
 .box-grid-text {
   font-weight: 400;
-  font-size: 20px;
+  
+  font-size: 12px;
   line-height: 100%;
   color: #EBEBEBD2;
   margin-top: 8px;
