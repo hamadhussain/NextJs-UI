@@ -7,8 +7,8 @@ const Navbar = () => {
       <Image
         src="/logo.png"
         alt={`Image`}
-        width={1020}
-        height={980}
+        width={500}
+        height={500}
         className="h-28 w-min "
       />
       <div className="flex justify-center items-center gap-20 text-white font-bold">
