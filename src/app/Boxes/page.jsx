@@ -18,7 +18,7 @@ const BoxGrid = () => {
     <div className="borderColorUp ">
       <p className="mx-8 py-10 text-lg">Explore Company Criteria below</p>
 
-      <div className="flex gap-4 items-center flex-wrap  justify-center text-sm p-8">
+      <div className="flex gap-4 items-center flex-wrap  justify-center  p-8">
         {boxes.map((box, index) => (
           <div key={index} className="box-grid-box">
             <p className="box-grid-text text-center px-2">{box.text}</p>
