@@ -152,7 +152,7 @@ export default function Home() {
       <div className="flex items-center justify-between py-2 ">
         <div className="addCriteria flex items-center gap-5 pl-23">
           <div className=" text-center ">Add Criteria</div>
-          <div className="flex-1 flex items-center border-b borderColor py-2 ">
+          <div className="flex-1 flex items-center border-b borderColorCriteria py-2 ">
             <input
               type="text"
               value={newCriteria}
@@ -184,7 +184,7 @@ function CriteriaRow({ index, removeItem }) {
   ];
 
   return (
-    <div className="flex items-center border-b borderColor py-2 pl-5 gap-8">
+    <div className="flex items-center border-b borderColorCriteria py-2 pl-5 gap-8">
       <div className="flex items-center gap-2  ">
         <span className="fontInter">{index}</span>
         <p className=" text-2xl ">{index === 3 ? "" : "["}</p>{" "}
