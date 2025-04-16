@@ -8,10 +8,10 @@ body{
   overflow: hidden;
 }
 .navFont {
-  font-weight: 700;
   font-size: 22px;
-  width: 903px  ;
-  height: 39px;
+}
+.navFontWeight {
+  font-weight: 700;
 }
 .boxHeader {
   font-weight: 400;
