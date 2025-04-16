@@ -38,6 +38,11 @@ button,img{
 
 }
 
+.logoIMG1{
+  width: 225px;
+  height: 101px;
+}
+
 .textCriteria{
   font-weight: 400;
   font-size: 14px;
