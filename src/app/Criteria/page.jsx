@@ -126,7 +126,6 @@
 //     </div>
 //   );
 // }
-
 "use client";
 import { useState } from "react";
 import { FaArrowDown, FaCaretDown, FaTimes } from "react-icons/fa";
@@ -144,7 +143,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-black p-8 pl-19.5 pr-55 pt-12 textCriteria space-y-4 w-3/4 text-white ">
+    <div className="bg-black pl-19.5 pr-55 pt-12 textCriteria space-y-3 w-3/4 text-white ">
       <h2 className="tracking-widest Criteria mb-4 pl-5">CRITERIA</h2>
       {Array.from({ length: 3 }, (x, i) => (
         <CriteriaRow key={i} index={i + 1} />
@@ -184,7 +183,7 @@ function CriteriaRow({ index, removeItem }) {
   ];
 
   return (
-    <div className="flex items-center border-b borderColorCriteria py-2 pl-5 gap-8">
+    <div className="flex items-center border-b borderColorCriteria py-1 pl-5 gap-8">
       <div className="flex items-center gap-2  ">
         <span className="fontInter">{index}</span>
         <p className=" text-2xl ">{index === 3 ? "" : "["}</p>{" "}
