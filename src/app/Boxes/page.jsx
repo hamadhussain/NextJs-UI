@@ -20,7 +20,7 @@ const BoxGrid = () => {
       <div className="flex  items-center flex-wrap  justify-evenly pt-14 px-10">
         {boxes.map((box, index) => (
           <div key={index} className="box-grid-box">
-            <p className="box-grid-text text-center px-2">{box.text}</p>
+            <p className="box-grid-text text-center px-1">{box.text}</p>
               <Image
                 src={box.img}
                 alt={`Box ${index + 1}`}
