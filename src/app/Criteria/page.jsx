@@ -261,7 +261,6 @@
 
 
 
-
 "use client";
 import {  useState } from "react";
 import { FaArrowDown, FaCaretDown, FaTimes } from "react-icons/fa";
@@ -285,7 +284,7 @@ export default function Home() {
 
    {/* <div className="bg-black w-full sm:w-11/12 md:w-4/5 lg:w-3/4 px-4 sm:px-8 pt-8 textCriteria space-y-3 text-white">  */}
 
-      <h2 className=" Criteria mb-4 pl-5">CRITERIA</h2>
+      <h2 className=" Criteria mb-4 pl-0 sm:pl-5">CRITERIA</h2>
       {Array.from({ length: 3 }, (x, i) => (
         <CriteriaRow key={i} index={i + 1} />
       ))}
@@ -338,13 +337,13 @@ function CriteriaRow({ index, removeItem }) {
   ];
 
   return (
-    <div className="flex items-center border-b 2xl:bg-black borderColorCriteria py-1 pl-5 gap-2 sm:gap-8">
+    <div className="flex items-center border-b 2xl:bg-black borderColorCriteria py-1 pl-0 sm:pl-5  gap-2 sm:gap-8">
       <div className="flex items-center gap-2  ">
 
-        <span className="fontInter ">{index}</span>
+        <span className="fontInter hidden sm:block">{index}</span>
         <p className=" text-2xl md:text-xl sm:text-lg hidden md:block">{index === 3 ? "" : "["}</p>{" "}
       </div>
-      <div className={`md:flex items-center gap-4 hidden ${index === 3 ? "ml-2" : ""} ${index === 1 ? "ml-1.5" : ""}`}>
+      <div className={`md:flex items-center gap-4 hidden ${index === 3 ? "ml-1.5" : ""} ${index === 1 ? "ml-1.5" : ""}`}>
         {index === 1 && <IoIosArrowRoundDown className="text-3xl  " />}
         {index === 2 && <span className=" flex -gap-10 text-xl"><IoIosArrowRoundDown className="text-  " /><IoIosArrowRoundUp className="relative -left-3 -top-2" /></span>}
         {index === 3 && <IoIosArrowRoundUp className="text-2xl" />}
@@ -359,10 +358,10 @@ function CriteriaRow({ index, removeItem }) {
         )}
         <select
           defaultValue={criterions[index - 1]}
-          className="appearance-none pl-8 bg-none"
+          className={`appearance-none pl-0 sm:pl-8  ${index === 1 ? " ml-0 sm:ml-1.5 " : ""}`}
         >
           {criterions.map((criterion, i) => (
-            <option className={`${index === 1 ? "px-2" : ""}`} key={i} value={criterion}>
+            <option className={``} key={i} value={criterion}>
               {criterion}
             </option>
           ))}
