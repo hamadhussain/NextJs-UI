@@ -126,8 +126,144 @@
 //     </div>
 //   );
 // }
+
+
+
+
+
+
+
+
+
+
+
+// "use client";
+// import { useState } from "react";
+// import { FaArrowDown, FaCaretDown, FaTimes } from "react-icons/fa";
+// import { GoSearch } from "react-icons/go";
+// import { RiArrowUpDownLine } from "react-icons/ri";
+// import { HiArrowSmallDown, HiArrowUp } from "react-icons/hi2";
+// import { IoIosArrowRoundDown } from "react-icons/io";
+// import { IoIosArrowRoundUp } from "react-icons/io";
+
+// export default function Home() {
+//   const [newCriteria, setNewCriteria] = useState("");
+
+//   const removeItem = (id) => {
+//     console.log(`Remove item with id: ${id}`);
+//   };
+
+//   return (
+//     <div className="bg-black pl-19.5 pr-55 pt-12 textCriteria space-y-3 w-3/4 text-white ">
+//       <h2 className="tracking-widest Criteria mb-4 pl-5">CRITERIA</h2>
+//       {Array.from({ length: 3 }, (x, i) => (
+//         <CriteriaRow key={i} index={i + 1} />
+//       ))}
+//       <div className="flex items-center justify-between py-2 ">
+//         <div className="addCriteria flex items-center gap-5 pl-23">
+//           <div className=" text-center ">Add Criteria</div>
+//           <div className="flex-1 flex items-center border-b borderColorCriteria py-2 ">
+//             <input
+//               type="text"
+//               value={newCriteria}
+//               onChange={(e) => setNewCriteria(e.target.value)}
+//               placeholder="Add Search Criteria or Add Keywords"
+//               className=" flex-1 px-4"
+//             />
+//             <GoSearch />
+//           </div>
+//         </div>
+//         <div className="pl-4">
+//           <button className="button px-3 py-1 text-sm">ADD</button>
+//         </div>
+//       </div>
+//       <div className="flex justify-end py-2">
+//         <button className="button px-3 py-1 text-sm w-full sm:w-auto">
+//           RUN SCREEN
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// function CriteriaRow({ index, removeItem }) {
+//   const criterions = [
+//     "Industry Classification In (Primary) Real Estate; Health Care",
+//     "Geography In United States and Canada",
+//     "Company Type In Public Company",
+//   ];
+
+//   return (
+//     <div className="flex items-center border-b borderColorCriteria py-1 pl-5 gap-8">
+//       <div className="flex items-center gap-2  ">
+//         <span className="fontInter">{index}</span>
+//         <p className=" text-2xl ">{index === 3 ? "" : "["}</p>{" "}
+//       </div>
+//       <div className={`flex items-center gap-4 ${index === 3 ? "ml-2" : ""} ${index === 1 ? "ml-1.5" : ""}`}>
+//         {index === 1 && <IoIosArrowRoundDown className="text-3xl  " />}
+//         {index === 2 && <span className=" flex -gap-10 text-xl"><IoIosArrowRoundDown className="text-  " /><IoIosArrowRoundUp className="relative -left-3 -top-2" /></span>}
+//         {index === 3 && <IoIosArrowRoundUp className="text-2xl" />}
+
+//         <span className={`w-5  ${index === 3 ? "ml-4.5" : ""}`}>{index === 1 ? <p className=""></p> : "And"}</span>
+//       </div>
+//       <div className="relative inline-block gap-0 ">
+//         {index === 1 ? (
+//           <FaCaretDown className="top-1 absolute pointer-events-none hidden " />
+//         ) : (
+//           <FaCaretDown className="top-1 absolute pointer-events-none " />
+//         )}
+//         <select
+//           defaultValue={criterions[index - 1]}
+//           className="appearance-none pl-8 bg-none"
+//         >
+//           {criterions.map((criterion, i) => (
+//             <option className={`${index === 1 ? "px-2" : ""}`} key={i} value={criterion}>
+//               {criterion}
+//             </option>
+//           ))}
+//         </select>
+//       </div>
+//       <div className="grow flex gap-2 justify-end items-center ">
+//         <span>
+//           {index === 1 && (
+//             <p className="">
+//               <span className="  px-1 opacity-65">{">  "}</span> 250,000
+//             </p>
+//           )}
+//           {index === 2 && "214,712"}
+//           {index === 3 && "3,609"}
+//         </span>{" "}
+//         <button onClick={() => removeItem(1)}>
+//           <FaTimes />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client";
-import { useState } from "react";
+import {  useState } from "react";
 import { FaArrowDown, FaCaretDown, FaTimes } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
 import { RiArrowUpDownLine } from "react-icons/ri";
@@ -138,39 +274,58 @@ import { IoIosArrowRoundUp } from "react-icons/io";
 export default function Home() {
   const [newCriteria, setNewCriteria] = useState("");
 
+  
   const removeItem = (id) => {
     console.log(`Remove item with id: ${id}`);
   };
 
   return (
-    <div className="bg-black pl-19.5 pr-55 pt-12 textCriteria space-y-3 w-3/4 text-white ">
-      <h2 className="tracking-widest Criteria mb-4 pl-5">CRITERIA</h2>
+    <div className="  px-10 xl:pl-19.5 xl:pr-55 pt-12 textCriteria space-y-3 w-full xl:w-3/4 text-white ">
+
+
+   {/* <div className="bg-black w-full sm:w-11/12 md:w-4/5 lg:w-3/4 px-4 sm:px-8 pt-8 textCriteria space-y-3 text-white">  */}
+
+      <h2 className=" Criteria mb-4 pl-5">CRITERIA</h2>
       {Array.from({ length: 3 }, (x, i) => (
         <CriteriaRow key={i} index={i + 1} />
       ))}
-      <div className="flex items-center justify-between py-2 ">
-        <div className="addCriteria flex items-center gap-5 pl-23">
-          <div className=" text-center ">Add Criteria</div>
-          <div className="flex-1 flex items-center border-b borderColorCriteria py-2 ">
+
+
+<div className="flex flex-col sm:flex-row items-center justify-between py-2 gap-4">
+        <div className="w-full lg:w-auto addCriteria flex flex-col lg:flex-row items-center gap-4 lg:pl-6">
+          <div className="text-center sm:text-left hidden xl:block">Add Criteria</div>
+          <div className="flex-1 w-full flex items-center border-b borderColorCriteria py-2">
             <input
               type="text"
               value={newCriteria}
               onChange={(e) => setNewCriteria(e.target.value)}
               placeholder="Add Search Criteria or Add Keywords"
-              className=" flex-1 px-4"
+              className="flex-1 px-4 bg-transparent outline-none"
             />
             <GoSearch />
           </div>
         </div>
-        <div className="pl-4">
-          <button className="button px-3 py-1 text-sm">ADD</button>
+        <div className="w-full sm:w-auto text-center">
+          <button className="button w-full sm:w-auto px-4 py-2 text-sm">ADD</button>
         </div>
       </div>
+
       <div className="flex justify-end py-2">
-        <button className="button px-3 py-1 text-sm w-full sm:w-auto">
-          RUN SCREEN
-        </button>
+        <button className="button w-full xl:w-auto px-4 py-2 text-sm">RUN SCREEN</button>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
@@ -183,23 +338,24 @@ function CriteriaRow({ index, removeItem }) {
   ];
 
   return (
-    <div className="flex items-center border-b borderColorCriteria py-1 pl-5 gap-8">
+    <div className="flex items-center border-b 2xl:bg-black borderColorCriteria py-1 pl-5 gap-2 sm:gap-8">
       <div className="flex items-center gap-2  ">
-        <span className="fontInter">{index}</span>
-        <p className=" text-2xl ">{index === 3 ? "" : "["}</p>{" "}
+
+        <span className="fontInter ">{index}</span>
+        <p className=" text-2xl md:text-xl sm:text-lg hidden md:block">{index === 3 ? "" : "["}</p>{" "}
       </div>
-      <div className={`flex items-center gap-4 ${index === 3 ? "ml-2" : ""} ${index === 1 ? "ml-1.5" : ""}`}>
+      <div className={`md:flex items-center gap-4 hidden ${index === 3 ? "ml-2" : ""} ${index === 1 ? "ml-1.5" : ""}`}>
         {index === 1 && <IoIosArrowRoundDown className="text-3xl  " />}
         {index === 2 && <span className=" flex -gap-10 text-xl"><IoIosArrowRoundDown className="text-  " /><IoIosArrowRoundUp className="relative -left-3 -top-2" /></span>}
         {index === 3 && <IoIosArrowRoundUp className="text-2xl" />}
 
         <span className={`w-5  ${index === 3 ? "ml-4.5" : ""}`}>{index === 1 ? <p className=""></p> : "And"}</span>
       </div>
-      <div className="relative inline-block gap-0 ">
+      <div className=" relative gap-0 ">
         {index === 1 ? (
-          <FaCaretDown className="top-1 absolute pointer-events-none hidden " />
+          <FaCaretDown className="top-1 absolute pointer-events-none hidden  " />
         ) : (
-          <FaCaretDown className="top-1 absolute pointer-events-none " />
+          <FaCaretDown className="top-1 absolute pointer-events-none hidden sm:block" />
         )}
         <select
           defaultValue={criterions[index - 1]}
@@ -212,11 +368,11 @@ function CriteriaRow({ index, removeItem }) {
           ))}
         </select>
       </div>
-      <div className="grow flex gap-2 justify-end items-center ">
+      <div className="grow hidden sm:flex gap-2 justify-end items-center ">
         <span>
           {index === 1 && (
-            <p className="">
-              <span className="  px-1 opacity-65">{">  "}</span> 250,000
+            <p className=" flex items-center">
+              <span className="  px-1 opacity-65  hidden 2xl:block">{">  "}</span> 250,000
             </p>
           )}
           {index === 2 && "214,712"}
